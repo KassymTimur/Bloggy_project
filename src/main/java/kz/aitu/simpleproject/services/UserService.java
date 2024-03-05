@@ -26,11 +26,11 @@ public class UserService implements UserServiceInterface {
 
     @Override
     public User create(User user) {
-        return null;
+        return repo.save(user);
     }
 
     @Override
     public List<User> getBySurname(String surname) {
-        return null;
+        return repo.findBySurname(surname);
     }
 }
